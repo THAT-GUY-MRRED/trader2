@@ -1,0 +1,18 @@
+This is cmd commands not powershell
+
+# Check if you have Python 3.11 installed
+py -3.11 --version
+
+# If yes, create new venv with it:
+deactivate
+py -3.11 -m venv env311
+env311\Scripts\activate.bat
+
+# Update 
+python.exe -m pip install --upgrade pip
+
+# Install packages (will work smoothly)
+pip install alpaca-trade-api pandas numpy discord.py
+
+# Run bot
+python live_trader.py
